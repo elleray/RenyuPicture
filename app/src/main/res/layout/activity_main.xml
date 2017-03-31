@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.picturecat.elleray.test.MainActivity">
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/path"
+        android:layout_marginLeft="20dp"
+        android:text="解析"/>
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/btn"
+        android:layout_above="@+id/path"
+        android:text="left"/>
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/btn1"
+        android:layout_above="@+id/path"
+        android:text="right"/>
+
+    <Button
+        android:id="@+id/btn3"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/btn2"
+        android:layout_above="@+id/path"
+        android:text="save"/>
+
+    <TextView
+        android:id="@+id/path"
+        android:padding="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Hello World!" />
+
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        />
+</RelativeLayout>
